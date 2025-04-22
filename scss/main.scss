@@ -92,6 +92,10 @@ body {
     padding-bottom: 1rem;
     margin-top: 5rem;
 
+    @media screen and (max-width: 992px) {
+        text-align: center;
+    }
+
     .projects-title {
         font-size: 2.25rem;
         text-align: center;
@@ -119,7 +123,7 @@ body {
                 
                 img {
                     width: 100%;
-                    height: auto;
+                    height: 100px;
                     border-radius: 8px;
                 }
             }
@@ -165,6 +169,10 @@ body {
                         margin-bottom: 0.5rem;
                         font-size: 0.875rem;
                         font-weight: 500;
+                    }
+
+                    @media screen and (max-width: 992px) {
+                        justify-content: center;
                     }
                 }
             }
