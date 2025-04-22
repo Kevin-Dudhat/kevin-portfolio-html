@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(45deg, #190f2c, #200b30);
+  padding: 15px;
+}
+
+/* Masonry Layout */
+.masonry {
+  gap: 15px;
+  -moz-columns: 4;
+       columns: 4;
+}
+@media screen and (max-width: 992px) {
+  .masonry {
+    -moz-columns: 3;
+         columns: 3;
+  }
+}
+@media screen and (max-width: 768px) {
+  .masonry {
+    -moz-columns: 2;
+         columns: 2;
+  }
+}
+@media screen and (max-width: 576px) {
+  .masonry {
+    -moz-columns: 1;
+         columns: 1;
+  }
+}
+.masonry img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.masonry-item {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 15px;
+  z-index: 1;
+}
+.masonry-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transform: translateY(100%);
+  transition: 0.3s;
+}
+.masonry-item:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+.masonry-item__caption {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  opacity: 0;
+  transition: 0.3s;
+  transform: translateY(50%);
+  z-index: 1;
+}
+.masonry-item__caption p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+.masonry-item:hover .masonry-item__caption {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.3s;
+}/*# sourceMappingURL=main.css.map */
