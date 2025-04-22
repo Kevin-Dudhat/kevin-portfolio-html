@@ -60,6 +60,18 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.social-links {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .about-content {
   color: #fff;
   line-height: 1.5;
@@ -162,4 +174,19 @@ body {
   .projects-section .projects-container .project-item .project-details .technologies {
     justify-content: center;
   }
+}
+.projects-section .projects-container .project-item .project-details .repo-button {
+  display: inline-block;
+  background-color: #9b4d96;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+.projects-section .projects-container .project-item .project-details .repo-button:hover {
+  background-color: #7b3e74;
 }/*# sourceMappingURL=main.css.map */
